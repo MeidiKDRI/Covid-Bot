@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <title>Covibot</title>
+  <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='custom.css')}}">
+
+
+<body>
+  <center>
+    <h1>
+      Covid-Bot
+    </h1>
+  </center>
+
+<div class="box"></div>
+  <div class="boxed">
+
+    <div>
+
+      <div id="welcome">
+        <p>Bonjour, je suis Covid-Bot,</p>
+        <p>Posez vos questions sur le Coronavirus, puis tapez sur ENTREE</p>
+        <p>Pour connaitre le nombre de cas dans un pays, tapez 'cas en NOM_PAYS_EN_ANGLAIS', puis tapez sur ENTREE</p>
+        <p>Des infos à partager ? Tapez 'Ajouter' puis ENTREE</p>
+      </div>
+
+      <div id="userInput">
+        <form  method="POST">
+          <input id="textInput" type="text" name="msg" placeholder="Votre question" />
+        </form>
+      </div>
+
+      {% if question %}
+      <div id="question">
+        <p class = 'userchat' , id = 'user_question',
+        style = "text-transform:capitalize;">
+        <strong>Votre Question :</strong> {{question}}</p>
+      </div>
+      {% endif %}
+
+      {% if reponse %}
+        <div id="response">
+        <p class = 'botchat' , id = 'bot_response'><strong>Covibot :</strong> {{reponse}}</p>
+      </div>
+      {% endif %}
+
+      {% if new_data %}
+      <div id="ajout">
+        <p class = 'userAdd' , id = 'user_add'> {{new_data}}</p>
+      </div>
+      {% endif %}
+
+
+    </div>
+
+  </div>
+  
+</body>
+
+

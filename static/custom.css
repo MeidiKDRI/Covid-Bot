@@ -1,0 +1,70 @@
+body {
+    font-family: monospace;
+    font-size: large;
+}
+
+div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#welcome{
+    font-weight: bold;
+    text-align: center;
+}
+
+#userInput{
+    font-weight: initial;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#new_dataInput{
+    font-weight: initial;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+#user_question{
+    margin: 15px;
+}
+
+#bot_response{
+    margin: 15px;
+}
+
+#question{
+    margin: 15px;
+    background: lightgreen;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+#response{
+    margin: 15px;
+    margin-bottom: 30px;
+    background-color: lightblue;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.boxed {
+    orientation: vertical;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 30px;
+    border: 1.5px solid rgb(22, 112, 214);
+    border-radius: 15px;
+}
+
+.box {
+  border: 1.5px solid black;
+}
+
